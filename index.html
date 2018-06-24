@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Редактор маршрутов</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"/>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvR1uT4e_vDrgQksEEO1fD4k5ehO_Ng88&libraries=geometry,drawing,places"></script>
+    <style>
+        .remove-button {
+            cursor: pointer;
+            border: none;
+            background: transparent;
+            position: absolute;
+            top: 10px;
+            right: 0;
+            transform: translateY(-50%)
+        }
+
+        .remove-button:focus {
+            outline: 0;
+        }
+
+        .search-input {
+            box-sizing: border-box;
+            border: 1px solid transparent;
+            width: 100%;
+            height: 32px;
+            padding: 0 12px;
+            border-radius: 3px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            font-size: 14px;
+            outline: none;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+<div class="container mt-4" id="container"></div>
+<script src="/static/bundle.js"></script>
+</body>
+</html>
